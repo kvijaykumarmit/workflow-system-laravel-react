@@ -1,0 +1,27 @@
+.custom-window {
+    position: fixed; /* Position fixed to make it stay in place */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+    width: 80%; /* Set width to 80% */
+    height: 100vh; /* Full height */
+    background-color: white; /* Background color */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Optional shadow */
+    z-index: 1050; /* Bootstrap modal z-index for layering */
+    display: flex; 
+    flex-direction: column; /* Column layout for header and body */
+}
+
+.window-header {
+    display: flex; /* Flexbox for header */
+    justify-content: space-between; /* Space between title and close button */
+    align-items: center; /* Center vertically */
+    padding: 10px; /* Add padding */
+    background-color: #f8f9fa; /* Light gray background */
+    border-bottom: 1px solid #dee2e6; /* Border at the bottom */
+}
+
+.window-body {
+    padding: 20px; /* Padding for the body */
+    overflow-y: auto; /* Allow scrolling if content is too large */
+    flex-grow: 1; /* Make body take remaining space */
+}
